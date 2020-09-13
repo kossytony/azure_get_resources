@@ -7,7 +7,8 @@ $label = $subscription.Name
 switch($subscription.TenantId){
 "TenantID1"{$Tenant = "tenameName1"}
 "TenantID2"{$Tenant = "tenameName2"}
-"TenantID2"{$Tenant = "tenameName3"}
+"TenantID3"{$Tenant = "tenameName3"}
+"TenantID4"{$Tenant = "tenameName4"}
 }
 #$Tenant = (Get-AzTenant -TenantId $subscription.TenantId).name
 $myobject= Get-AzResource -DefaultProfile $context | select-object Name,ResourceGroupName,Location,Type 
