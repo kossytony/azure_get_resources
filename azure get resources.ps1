@@ -10,6 +10,7 @@ switch($subscription.TenantId){
 "TenantID1"{$Tenant = "Tenant1"}
 "TenantID2"{$Tenant = "Tenant2"}
 "TenantID3"{$Tenant = "Tenant3"}
+"TenantID4"{$Tenant = "Tenant4"}
 }
 #$Tenant = (Get-AzTenant -TenantId $subscription.TenantId).name
 $AzResources= Get-AzResource -DefaultProfile $context | `
